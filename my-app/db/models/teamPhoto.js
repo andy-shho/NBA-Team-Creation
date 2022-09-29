@@ -1,7 +1,8 @@
-const Nba = require('./Nba.js');
+const postgres = require ('../index.js');
 
-const getPhoto = (params) =>{
-  return Nba.find(params).select('url -_id').exec();
+const getTeam = function (params) {
+  let queryString = `SELECT url FROM teams WHERE team = '${params.team}'`;
+  return postgres.query(queryString);
 }
 
-module.exports = getPhoto;
+module.exports = getTeam;

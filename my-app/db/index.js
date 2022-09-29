@@ -1,13 +1,30 @@
-const mongoose = require('mongoose');
+const {Client} = require ('pg');
 
-const mongoURI = 'mongodb://localhost:27017/nba';
+const postgres = new Client ({
+  user: 'postgres',
+  host: 'localhost',
+  port: 5432,
+  password: 'postgres',
+  database: 'nba'
+})
 
-const db = mongoose.connect(mongoURI, { useNewUrlParser: true });
+postgres.connect()
+  .then(() => console.log('Successfully Connected'))
+  .catch((err) => (console.log('Failed to connect to PostgreSQL')))
 
-db
-  .then (() => console.log(`Connected to ${mongoURI}`))
-  .catch((err) => console.log('Failed to connect to db'))
+module.exports = postgres;
 
 
-module.exports = db;
+// const mongoose = require('mongoose');
+
+// const mongoURI = 'mongodb://localhost:27017/nba';
+
+// const db = mongoose.connect(mongoURI, { useNewUrlParser: true });
+
+// db
+//   .then (() => console.log(`Connected to ${mongoURI}`))
+//   .catch((err) => console.log('Failed to connect to db'))
+
+
+// module.exports = db;
 

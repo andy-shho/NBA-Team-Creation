@@ -1,8 +1,9 @@
 const express = require ('express');
 const axios = require('axios');
 const path = require('path');
-const db = require('../db');
+const db = require ('../db/index.js');
 const getTeam = require('./controllers/teamPhoto.js');
+const getProfile = require('./controllers/profilePhoto.js');
 const app = express();
 
 
@@ -32,6 +33,8 @@ app.get('/search', (req, res) => {
 })
 
 app.get('/teamphoto', getTeam);
+
+app.get('/playerphoto', getProfile);
 
 const API_PORT = 3000;
 app.listen(API_PORT);
