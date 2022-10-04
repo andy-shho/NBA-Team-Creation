@@ -1,8 +1,14 @@
 import React, {useState, useEffect} from 'react';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 function Search(props) {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+
+  const style = {
+    backgroundColor: '#C0D6DF',
+  };
 
   const onFirst = function(e) {
     setFirstName(e.target.value);
@@ -27,9 +33,9 @@ function Search(props) {
   return (
     <div>
       <form onSubmit={onSearch}>
-        First Name: <input type='text' value={firstName} onChange={onFirst} placeholder='Enter first name' required></input>
-        Last Name: <input type='text' value={lastName} onChange={onLast} placeholder='Enter last name' required></input>
-        <button type='submit'>Search</button>
+        <TextField variant="outlined" value={firstName} onChange={onFirst} label='First Name' required></TextField>
+        <TextField variant="outlined" value={lastName} onChange={onLast} label='Last Name' required></TextField>
+        <Button style={style} variant="contained" type='submit'>Search</Button>
       </form>
     </div>
   )

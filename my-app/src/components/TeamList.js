@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import TeamPosition from './TeamPosition';
+import Button from '@mui/material/Button';
 
 function TeamList (props) {
   const [PG, setPG] = useState([]);
@@ -12,6 +13,10 @@ function TeamList (props) {
   const [totalAssists, setAssists] = useState(0);
   const [totalSteals, setSteals] = useState(0);
   const [totalBlocks, setBlocks] = useState(0);
+
+  const style = {
+    backgroundColor: '#C0D6DF',
+  };
 
   const onPG = function(e) {
     e.preventDefault();
@@ -107,7 +112,7 @@ function TeamList (props) {
               <TeamPosition positionData={PG}/>
             </div>)
           : <div>
-              <button id="add-team" type='button' onClick={onPG}>+</button>
+              <Button style={style} variant="contained" id="add-team" type='button' onClick={onPG}>+</Button>
             </div>}
         </div>
         <div>
@@ -117,7 +122,7 @@ function TeamList (props) {
               <TeamPosition positionData={SG}/>
             </div>)
           : <div>
-              <button id="add-team" type='button' onClick={onSG}>+</button>
+              <Button style={style} variant="contained" id="add-team" type='button' onClick={onSG}>+</Button>
             </div>}
         </div>
         <div>
@@ -127,7 +132,7 @@ function TeamList (props) {
               <TeamPosition positionData={SF}/>
             </div>)
           : <div>
-              <button id="add-team" type='button' onClick={onSF}>+</button>
+              <Button style={style} variant="contained" id="add-team" type='button' onClick={onSF}>+</Button>
             </div>}
         </div>
         <div>
@@ -137,7 +142,7 @@ function TeamList (props) {
               <TeamPosition positionData={PF}/>
             </div>)
           : <div>
-              <button id="add-team" type='button' onClick={onPF}>+</button>
+              <Button style={style} variant="contained" id="add-team" type='button' onClick={onPF}>+</Button>
             </div>}
         </div>
         <div>
@@ -147,7 +152,7 @@ function TeamList (props) {
               <TeamPosition positionData={C}/>
             </div>)
           : <div>
-              <button id="add-team" type='button' onClick={onC}>+</button>
+              <Button style={style} variant="contained" id="add-team" type='button' onClick={onC}>+</Button>
             </div>}
         </div>
       </div>
@@ -162,7 +167,7 @@ function TeamList (props) {
       </div>)
       : null}
       <div id="reset">
-        <button type="button" onClick={onReset}>Reset Team</button>
+        <Button style={style} variant="contained" type="button" onClick={onReset}>Reset Team</Button>
       </div>
     </div>
   );
