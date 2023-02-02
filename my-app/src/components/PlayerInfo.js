@@ -22,7 +22,7 @@ function PlayerInfo (props) {
           <h3>Height: {props.pData.height_feet}'{props.pData.height_inches}"</h3>
           <h3>Weight: {props.pData.weight_pounds} lb</h3>
           <div id="player-stats">
-            <h2>Stats:</h2>
+            <h3>Stats:</h3>
             <div>{props.playerStats.pts} ppg</div>
             <div>{props.playerStats.reb} rpg</div>
             <div>{props.playerStats.ast} apg</div>
