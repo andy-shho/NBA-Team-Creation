@@ -4,7 +4,7 @@ A Passionate Personal Project
 
 Overview:
 ---------
-NBA Team Creation is a personal project that allows users to search for a current NBA player and view their player information and statistics for the current season. Users are able to add this player to their respective position on the team, and the total average statistics of the created team will be displayed.
+NBA Team Creation is a personal project that allows users to search for a current NBA player and view their player information and statistics for the current season. Users are able to add this player to their respective position on the team, and the total statistics of the created team will be displayed.
 
 **[Demo](https://youtu.be/JW_WZA3yM_g)**
 
@@ -22,7 +22,7 @@ The player information displays the details and statistics of the selected playe
 
 Team Construction
 -----------------
-Team Construction allows for users to add a specific player into their fantasy team lineup and determine the average statistics of the team. This component includes:
+Team Construction allows for users to add a specific player into their fantasy team lineup and determine the total statistics of the team. This component includes:
   * Individual add buttons for each position (Point Guard, Shooting Guard, Small Forward, Power Forward, Center)
   * Player cards that display photo of player when added on the fantasy team
   * Reset team button that removes all players from the fantasy team
