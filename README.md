@@ -7,6 +7,7 @@ Overview:
 NBA Team Creation is a personal project that allows users to search for a current NBA player and view their player information and statistics for the current season. Users are able to add this player to their respective position on the team, and the totel average statistics of the entire created team will be displayed.
 
 [Demo](https://youtu.be/JW_WZA3yM_g)
+------
 
 Component Details:
 -----------------
