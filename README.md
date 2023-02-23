@@ -8,7 +8,7 @@ NBA Team Creation is a personal project that allows users to search for a curren
 
 **[Demo](https://youtu.be/JW_WZA3yM_g)**
 
-![GIF expired](https://recordit.co/g2fDHMGgjB](http://g.recordit.co/g2fDHMGgjB.gif)
+![GIF expired](http://g.recordit.co/g2fDHMGgjB.gif)
 
 
 Component Details:
