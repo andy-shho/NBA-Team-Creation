@@ -8,10 +8,12 @@ NBA Team Creation is a personal project that allows users to search for a curren
 
 **[Demo](https://youtu.be/JW_WZA3yM_g)**
 
+![GIF expired](https://recordit.co/g2fDHMGgjB)
+
 
 Component Details:
 -----------------
-Player Infomation 
+Player Information 
 -----------------
 
 The player information displays the details and statistics of the selected player. This component includes:
